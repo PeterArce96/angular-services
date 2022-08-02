@@ -22,4 +22,8 @@ export class ClientesService {
   getClientes(): any {
     return this.clientes;
   }
+
+  setCliente(cliente: any){
+    this.clientes.push(cliente);
+  }
 }
