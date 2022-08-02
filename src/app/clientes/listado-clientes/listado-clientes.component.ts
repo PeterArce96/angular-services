@@ -14,7 +14,6 @@ export class ListadoClientesComponent implements OnInit {
 
   ngOnInit(): void {
     this.clientes = this.clientesService.getClientes()
-    console.log(this.clientes);
   }
 
 }

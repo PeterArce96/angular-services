@@ -7,13 +7,13 @@ export class ClientesService {
 
   private clientes: any = [
     {
-      nombre: 'Iberdrola', cif:'A16415411', domicilio: 'Bilbao' 
+      nombre: 'Iberdrola', cif:'A16415411', localidad: 'Bilbao' 
     },
     {
-      nombre: 'Jazztel', cif:'A987654321', domicilio: 'Madrid' 
+      nombre: 'Jazztel', cif:'A987654321', localidad: 'Madrid' 
     },
     {
-      nombre: 'La caixa', cif:'A123456789', domicilio: 'Barcelona' 
+      nombre: 'La caixa', cif:'A123456789', localidad: 'Barcelona' 
     },
   ]
 

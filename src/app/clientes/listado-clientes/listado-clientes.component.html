@@ -1,1 +1,17 @@
-<p>listado-clientes works!</p>
+<div class="row">
+    <div class="col-100">
+        <h1>Listado de cliente</h1>
+        <table>
+            <tr>
+                <th>Cliente</th>
+                <th>CIF</th>
+                <th>Localidad</th>
+            </tr>
+            <tr *ngFor="let cliente of clientes">
+                <td>{{cliente.nombre}}</td>
+                <td>{{cliente.cif}}</td>
+                <td>{{cliente.localidad}}</td>
+            </tr>
+        </table>
+    </div>
+</div>
