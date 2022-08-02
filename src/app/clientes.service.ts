@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
+import { Cliente } from './models/cliente.model';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ClientesService {
 
-  private clientes: any = [
+  private clientes: Array<Cliente> = [
     {
       nombre: 'Iberdrola', cif:'A16415411', localidad: 'Bilbao' 
     },
@@ -19,11 +20,11 @@ export class ClientesService {
 
   constructor() { }
 
-  getClientes(): any {
+  getClientes(): Array<Cliente> {
     return this.clientes;
   }
 
-  setCliente(cliente: any){
+  setCliente(cliente: Cliente){
     this.clientes.push(cliente);
   }
 }
